@@ -1,10 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/global.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__menu">
+      <ul class="header__links-list">
+        <li class="header__links-list-item_no-bullit">главная</li>
+        <li class="header__links-list-item">посмотреть лоты</li>
+        <li class="header__links-list-item">об аукционе</li>
+      </ul>
+    </nav>
+    <div class="header__logo">
+      <a class="header__logo-image"></a>
+    </div>
+    <div class="header__address">
+      <adress class="adress">
+        <a href="tel:+70000000">+7(000)000-00-00</a><br>
+        <a href="mailto:mail@example.com">mail@example.com</a>
+        <p>наб. Принсенграхт 263- <br>265, Амстердам</p>
+      </adress>
+    </div>
+  </header>
+  <main>
+    <section class="cover">
+      <div class="overlay"></div>
+      <div class="cover__title">
+        <h1 class="aligned-text">ОНО</h1>
+        <h1 class="aligned-text_center">ТЕБЕ</h1>
+        <h1 class="aligned-text_right">НАДО</h1>
+      </div>
+      <div class="cover__description">
+        <div class="cover__description-text">Аукцион вещей, вкоторые никто не верил</div>
+        <button class="bet-button">Сделать ставку</button>
+      </div>
+      overlay — полупрозрачный блок поверх секции;
+
+      letter-spacing-extended — класс для управления межбуквенным расстоянием в местах, где есть эти акценты;
+      no-letter-spacing — класс для обнуления общего межбуквенного расстояния для последней буквы;
+    </section>
+    <section class="lots">
+
+    </section>
+    <section class="about">
+
+    </section>
+  </main>
+  <footer class="footer">
+
+  </footer>
+</body>
+
 </html>
