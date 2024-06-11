@@ -15,9 +15,9 @@
   <header class="header">
     <nav class="header__menu">
       <ul class="header__links-list">
-        <li class="header__links-list-item_no-bullit">главная</li>
-        <li class="header__links-list-item">посмотреть лоты</li>
-        <li class="header__links-list-item">об аукционе</li>
+        <li class="header__links-list-item_no-bullit"><a href="" class="header__link_active">главная</a></li>
+        <li class="header__links-list-item"><a href="#lots" class="header__link">посмотреть лоты</a></li>
+        <li class="header__links-list-item"><a href="#about" class="header__link">об аукционе</a></li>
       </ul>
     </nav>
     <div class="header__logo">
@@ -25,29 +25,27 @@
     </div>
     <div class="header__address">
       <adress class="adress">
-        <a href="tel:+9 999 555 5555">+9 999 555 5555</a><br>
-        <a href="mailto:mail@example.com">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263- <br>265, Амстердам</p>
+        <a class="adress-item" href="tel:+9 999 555 5555">+9 999 555 5555</a><br>
+        <a class="adress-item" href="mailto:mail@example.com">info@sobaka.ge</a>
+        <p class="adress-item">наб. Принсенграхт 263- <br>265, Амстердам</p>
       </adress>
     </div>
   </header>
   <main>
-    <section class="cover">
+    <section class="cover" id="cover">
       <div class="overlay"></div>
       <div class="cover__title">
-        <h1 class="aligned-text">ОНО</h1>
-        <h1 class="aligned-text_center">ТЕБЕ</h1>
-        <h1 class="aligned-text_right">НАДО</h1>
+        <h1 class="aligned-text">О<span class="letter-spacing-extended">НО</span></h1>
+        <h1 class="aligned-text_center">ТЕ<span class="letter-spacing-extended">БЕ</span></h1>
+        <h1 class="aligned-text_right"><span class="letter-spacing-extended">Н</span>АД<span
+            class="no-letter-spacing">О</span></h1>
       </div>
       <div class="cover__description">
-        <div class="cover__description-text">Аукцион вещей, вкоторые никто не верил</div>
+        <div class="cover__description-text">Аукцион<span class="letter-spacing-extended">  </span>вещей,<span class="letter-spacing-extended">  </span>в<span class="letter-spacing-extended">  </span>которые<span class="letter-spacing-extended">  </span>никто<span class="letter-spacing-extended">  </span>не<span class="letter-spacing-extended">   </span>верил</div>
         <button class="bet-button">Сделать ставку</button>
       </div>
-
-      letter-spacing-extended — класс для управления межбуквенным расстоянием в местах, где есть эти акценты;
-      no-letter-spacing — класс для обнуления общего межбуквенного расстояния для последней буквы;
     </section>
-    <section class="lots">
+    <section class="lots"  id="lots">
       <h3 class="lots__heading">Лоты</h3>
       <ul class="lots__card-list">
         <li class="lots__card-list-item">
@@ -86,7 +84,7 @@
       </ul>
       <a href="#more" class="lots__look-more-link">посмотреть больше</a>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__column">
         <div class="about__logo">
           <img src="./images/logo-white.svg" alt="Логотип" class="about__logo-image">
@@ -95,11 +93,14 @@
       <div class="about__column">
         <h3 class="about__title">Об аукционе</h3>
         <div class="about__text">
-          <p class="about__text-part">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата.
+          <p class="about__text-part">Здесь вы не встретите очередное пафосное собрание невероятно дорогого
+            антиквариата.
             Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка
-            или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+            или картина, которую может <span>нарисовать</span> <span>даже</span> ребёнок? Кому нужны <span>все эти
+              странные вещи, созданные</span> любителями?
           </p>
-          <p class="about__text-part">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах
+          <p class="about__text-part">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и
+            прах
             растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
             на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную
             культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали
@@ -110,14 +111,14 @@
   </main>
   <footer class="footer">
     <adress class="adress">
-      <a href="tel:+9 999 555 5555">+9 999 555 5555</a><br>
-      <a href="mailto:mail@example.com">info@sobaka.ge</a>
-      <p>наб. Принсенграхт 263- <br>265, Амстердам</p>
+      <a class="adress-item" href="tel:+9 999 555 5555">+9 999 555 5555</a><br>
+      <a class="adress-item" href="mailto:mail@example.com">info@sobaka.ge</a>
+      <p class="adress-item">наб. Принсенграхт 263- <br>265, Амстердам</p>
     </adress>
     <nav class="footer__menu">
-      <ul class="footer__menu-list">главная</ul>
-      <ul class="footer__menu-list">посмотреть лоты</ul>
-      <ul class="footer__menu-list">об аукционе</ul>
+      <ul class="footer__menu-list"><a href="#cover" class="header__link_active">главная</a></ul>
+      <ul class="footer__menu-list"><a href="#lots" class="header__link">посмотреть лоты</a></ul>
+      <ul class="footer__menu-list"><a href="#about" class="header__link">об аукционе</a></ul>
     </nav>
     <div class="footer__social-list">
       <div class="footer__social-list-item">

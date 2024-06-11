@@ -24,11 +24,21 @@
 
 .header__links-list-item {
   list-style: circle;
-
 }
 
 .header__links-list-item_no-bullit {
   list-style: none;
+}
+
+.header__link{
+  text-decoration: underline; 
+  text-decoration-color: rgb(0, 0, 0); 
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px; 
+}
+
+.header__link_active{
+  text-decoration: none;
 }
 
 .header__logo {
@@ -51,22 +61,20 @@
   flex-direction: column;
   margin-right: 26px;
   align-items: center;
+  justify-content: flex-end;
 }
 
-.address {
+.adress-item {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
   line-height: 24.3px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 
 .cover {
   position: relative;
   background-image: url(../images/cover.jpg);
+  background-position: center;
   background-size: cover;
   width: 1100px;
   height: 757px;
@@ -93,9 +101,17 @@
   flex-direction: column;
   gap: 20px;
   font-family: Raleway;
-  font-size: 70px;
+  font-size: 68px;
   font-weight: 700;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.4em;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0em;
 }
 
 .aligned-text {
@@ -117,18 +133,40 @@
 }
 
 .cover__description {
+  position: relative;
+  z-index: 2;
   margin: 135px 50px 51px 78px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   color: white;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .cover__description-text {
+  letter-spacing: 0.05em;
   font-family: Raleway;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.bet-button {
+  padding: 12px 32px;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .lots {
@@ -274,7 +312,7 @@
 .footer {
   margin: 180px 50px 88px 50px;
   display: flex;
-  gap: 185px;
+  justify-content: space-between;
 
 }
 
