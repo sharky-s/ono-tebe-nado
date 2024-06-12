@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-  <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
   <header class="header">
     <nav class="header__menu">
       <ul class="header__links-list">
-        <li class="header__links-list-item_no-bullit"><a href="" class="header__link_active">главная</a></li>
+        <li class="header__links-list-item_no-bullit"><a class="header__link_active">главная</a></li>
         <li class="header__links-list-item"><a href="#lots" class="header__link">посмотреть лоты</a></li>
         <li class="header__links-list-item"><a href="#about" class="header__link">об аукционе</a></li>
       </ul>
@@ -24,29 +24,29 @@
       <a class="header__logo-image"></a>
     </div>
     <div class="header__address">
-      <adress class="adress">
-        <a class="adress-item" href="tel:+9 999 555 5555">+9 999 555 5555</a><br>
+      <address class="adress">
+        <a class="adress-item" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="adress-item" href="mailto:mail@example.com">info@sobaka.ge</a>
         <p class="adress-item">наб. Принсенграхт 263- <br>265, Амстердам</p>
-      </adress>
+      </address>
     </div>
   </header>
   <main>
     <section class="cover" id="cover">
       <div class="overlay"></div>
-      <div class="cover__title">
-        <h1 class="aligned-text">О<span class="letter-spacing-extended">НО</span></h1>
-        <h1 class="aligned-text_center">ТЕ<span class="letter-spacing-extended">БЕ</span></h1>
-        <h1 class="aligned-text_right"><span class="letter-spacing-extended">Н</span>АД<span
-            class="no-letter-spacing">О</span></h1>
-      </div>
+      <h1 class="cover__title">
+        <span class="aligned-text">О<span class="letter-spacing-extended">НО</span></span>
+        <span class="aligned-text_center">ТЕ<span class="letter-spacing-extended">БЕ</span></span>
+        <span class="aligned-text_right"><span class="letter-spacing-extended">Н</span>АД<span
+            class="no-letter-spacing">О</span></span>
+      </h1>
       <div class="cover__description">
-        <div class="cover__description-text">Аукцион<span class="letter-spacing-extended">  </span>вещей,<span class="letter-spacing-extended">  </span>в<span class="letter-spacing-extended">  </span>которые<span class="letter-spacing-extended">  </span>никто<span class="letter-spacing-extended">  </span>не<span class="letter-spacing-extended">   </span>верил</div>
-        <button class="bet-button">Сделать ставку</button>
+        <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+        <button type="button" class="bet-button">Сделать ставку</button>
       </div>
     </section>
-    <section class="lots"  id="lots">
-      <h3 class="lots__heading">Лоты</h3>
+    <section class="lots" id="lots">
+      <h2 class="lots__heading">Лоты</h2>
       <ul class="lots__card-list">
         <li class="lots__card-list-item">
           <a href="#lot-1" class="card-link"></a>
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="about__column">
-        <h3 class="about__title">Об аукционе</h3>
+        <h2 class="about__title">Об аукционе</h2>
         <div class="about__text">
           <p class="about__text-part">Здесь вы не встретите очередное пафосное собрание невероятно дорогого
             антиквариата.
@@ -110,30 +110,32 @@
     </section>
   </main>
   <footer class="footer">
-    <adress class="adress">
-      <a class="adress-item" href="tel:+9 999 555 5555">+9 999 555 5555</a><br>
+    <address class="adress">
+      <a class="adress-item" href="tel:+99995555555">+9 999 555 5555</a>
       <a class="adress-item" href="mailto:mail@example.com">info@sobaka.ge</a>
       <p class="adress-item">наб. Принсенграхт 263- <br>265, Амстердам</p>
-    </adress>
+    </address>
     <nav class="footer__menu">
-      <ul class="footer__menu-list"><a href="#cover" class="header__link_active">главная</a></ul>
-      <ul class="footer__menu-list"><a href="#lots" class="header__link">посмотреть лоты</a></ul>
-      <ul class="footer__menu-list"><a href="#about" class="header__link">об аукционе</a></ul>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list"><a class="header__link_active">главная</a></li>
+        <li class="footer__menu-list"><a href="#lots" class="header__link">посмотреть лоты</a></li>
+        <li class="footer__menu-list"><a href="#about" class="header__link">об аукционе</a></li>
+      </ul>
     </nav>
-    <div class="footer__social-list">
-      <div class="footer__social-list-item">
+    <ul class="footer__social-list">
+      <li class="footer__social-list-item">
         <a href="" class="footer__social-link"></a>
         <img src="./images/yt.svg" alt="Ютуб" class="footer__social-icon">
-      </div>
-      <div class="footer__social-list-item">
+      </li>
+      <li class="footer__social-list-item">
         <a href="" class="footer__social-link"></a>
         <img src="./images/yt.svg" alt="ВКонтакте" class="footer__social-icon">
-      </div>
-      <div class="footer__social-list-item">
+      </li>
+      <li class="footer__social-list-item">
         <a href="" class="footer__social-link"></a>
         <img src="./images/pinterest.svg" alt="Пинтерест" class="footer__social-icon">
-      </div>
-    </div>
+      </li>
+    </ul>
   </footer>
 </body>
 
