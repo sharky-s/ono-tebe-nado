@@ -265,12 +265,13 @@ a {
 }
 
 .lots__look-more-link {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 23.48px;
-  padding-top: 30px;
+  margin-top: 30px;
   margin-left: 40px;
 }
 
