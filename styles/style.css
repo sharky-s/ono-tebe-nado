@@ -35,6 +35,8 @@
   text-decoration-thickness: 1px; 
 }
 
+
+
 .header__link_active{
   text-decoration: none;
 }
@@ -62,8 +64,19 @@
   justify-content: flex-end;
 }
 
+a{
+  text-decoration: underline; 
+  text-decoration-color: rgb(0, 0, 0); 
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px; 
+}
+
 .adress {
   font-style: normal;
+}
+
+.adress-non-line{
+  text-decoration: none;
 }
 
 .adress-item {
@@ -198,58 +211,60 @@
 }
 
 .card-link {
+  text-decoration: none;
   width: 100%;
   height: 100%;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   position: relative;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
-  position: absolute;
+  /* position: relative;  */
+  z-index: 2; 
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 26.4px;
   text-transform: uppercase;
-  text-decoration: underline;
   color: rgba(255, 255, 255, 1);
   margin: 0px 40px;
   padding-top: 51px;
-
+  text-decoration: underline; 
+  text-decoration-color: rgb(255, 255, 255); 
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px; 
 }
 
 .card__text {
-  position: absolute;
+  /* position: relative;  */
+  z-index: 2; 
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
   margin: 0px 40px;
-  bottom: 48px;
+  padding-bottom: 48px;
   color: rgba(255, 255, 255, 1);
-
 }
 
 .lots__look-more-link {
@@ -257,8 +272,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 23.48px;
-  position: absolute;
-  margin-top: 30px;
+  padding-top: 30px;
   margin-left: 40px;
 }
 
@@ -328,6 +342,7 @@
 }
 
 .footer__menu-list {
+  list-style: none;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 400;
